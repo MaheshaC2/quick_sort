@@ -22,6 +22,5 @@ def qshelper(my_array, start, end):
             right -= 1
 
     my_array[pivot], my_array[right] = my_array[right], my_array[pivot]
-
     qshelper(my_array, start, right - 1)
     qshelper(my_array, right + 1, end)
